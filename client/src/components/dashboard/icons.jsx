@@ -84,3 +84,21 @@ export function IconFlame({ className }) {
     </svg>
   );
 }
+
+export function IconCoin({ className }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} {...base}>
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M12 8v8M9.5 10c0-1.2 1-2 2.5-2s2.5.8 2.5 2-1 1.7-2.5 2-2.5.8-2.5 2 1 2 2.5 2 2.5-.8 2.5-2" />
+    </svg>
+  );
+}
+
+export function IconLock({ className }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} {...base}>
+      <rect x="5" y="11" width="14" height="9" rx="2" />
+      <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+    </svg>
+  );
+}

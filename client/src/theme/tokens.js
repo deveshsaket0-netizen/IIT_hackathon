@@ -31,9 +31,9 @@ export const statCategories = {
 };
 
 export const navItems = [
-  { key: "home", label: "Overview" },
-  { key: "plant", label: "Greenhouse" },
-  { key: "inventory", label: "Satchel" },
-  { key: "market", label: "Market" },
-  { key: "profile", label: "Profile" },
+  { key: "home", label: "Overview", path: "/" },
+  { key: "plant", label: "Greenhouse", path: null },
+  { key: "inventory", label: "Satchel", path: null },
+  { key: "market", label: "Market", path: "/shop" },
+  { key: "profile", label: "Profile", path: "/profile" },
 ];

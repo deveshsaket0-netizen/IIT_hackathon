@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { colors } from "../theme/tokens";
 import { useDashboardData } from "../hooks/useDashboardData";
 import { resolveBaseImage, resolvePlantImage } from "../assets/registry";
@@ -13,7 +12,6 @@ export default function Dashboard() {
   const { data, loading, error, toggleHabit } = useDashboardData({
     endpoint: "/api/dashboard",
   });
-  const [activeTab, setActiveTab] = useState("home");
 
   if (loading) {
     return (
@@ -78,7 +76,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      <NavBar active={activeTab} onNavigate={setActiveTab} />
+      <NavBar />
     </div>
   );
 }
